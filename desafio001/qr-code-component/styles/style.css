@@ -13,7 +13,7 @@
 --slate900: hsl(218, 44%, 22%);
 /* fontes */
 --font-regular:normal 400 16px 'Outfit', Arial, Sans-serif;
---font-bold:normal 700 1.5rem 'Outfit', Arial, Sans-serif;
+--font-bold:normal 700 1.3rem 'Outfit', Arial, Sans-serif;
 }
 body {
     display: grid;
