@@ -79,6 +79,10 @@ main {
     color: var(--white);
     border-radius: .5rem;
 }
+.btn:hover {
+    background: var(--green700);
+    cursor: pointer;
+}
 .perfume,h1,p,.price {
     margin-bottom: 1rem;
 }
