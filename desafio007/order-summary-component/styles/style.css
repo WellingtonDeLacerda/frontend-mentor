@@ -85,6 +85,7 @@ main {
 }
 .music a:hover {
     opacity: 60%;
+    cursor: pointer;
 }
 button {
     border-radius: .7rem;
@@ -104,6 +105,7 @@ button {
 }
 .btn-pay:hover {
     opacity: 60%;
+    cursor: pointer;
 }
 .btn-cancel:hover {
     color: var(--blue950);
