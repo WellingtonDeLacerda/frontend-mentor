@@ -60,7 +60,6 @@ main {
 h1 strong {
     color: var(--purple500);
     font: var(--font-semibold);
-    color: var(--purple500);
 }
 .content p {
     font: var(--font-medium);
@@ -69,6 +68,8 @@ h1 strong {
 }
 .data span{
     text-transform: uppercase;
+    color: var(--white3);
+    font: var(--font-medium);
 }
 .queries {
     text-transform: uppercase;
@@ -83,10 +84,6 @@ h1 strong {
     font: var(--font-semibold);
     font-size: 1.5rem;
     margin-bottom: .5rem;
-}
-.data span {
-    color: var(--white3);
-    font: var(--font-medium);
 }
 @media screen and (min-width:48rem){
     main {
