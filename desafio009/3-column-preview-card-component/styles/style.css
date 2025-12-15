@@ -59,6 +59,12 @@ section button {
     align-self: flex-start;
     border-radius: 2rem;
     padding: 1rem 2rem;
+    border:2px solid var(--gray100);
+}
+section button:hover {
+    background:transparent;
+    color: var(--gray100);
+    cursor: pointer;
 }
 .sedans {
     background: var(--gold500);
