@@ -1,0 +1,70 @@
+@charset 'UTF-8';
+
+body {
+    font: var(--padrao);
+    background: var(--purple700) url("../assets/images/bg-mobile.svg") no-repeat top center ;
+    color: var(--white);
+}
+header {
+    padding: 1rem 2rem;
+}
+main {
+    padding: 2rem;
+    text-align: center;
+}
+.image img {
+    width: 100%;
+}
+.content h1 {
+    margin: 2rem 0rem;
+    font-size:clamp(1.5rem,5vw,2.5rem);
+    font-family: var(--ff);
+    font-weight: var(--fw);
+}
+.content p {
+    line-height: 1.5rem;
+    margin: 0rem 1rem;
+}
+.content button {
+    margin: 1.5rem 0rem;
+    padding: .8rem;
+    border-radius: 2rem;
+    width: 13rem;
+    font-size: .3rem;
+    color: var(--purple700);
+    font: var(--padrao);
+    border: none;
+}
+.content button:hover {
+    background: var(--magenta400);
+    color: var(--white);
+}
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+nav a {
+    color: var(--white);
+    padding: .3rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--white);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+nav a:hover {
+    cursor: pointer;
+    color: var(--magenta400);
+    border-color: var(--magenta400);
+}
+nav i {
+    object-position: center center;
+    object-fit: cover;
+}
