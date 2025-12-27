@@ -1,37 +1,39 @@
 body {
-    padding: 3rem;
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    background: var(--purple700) url("../assets/images/bg-desktop.svg") no-repeat left center ;
+    background: var(--purple700) url("../assets/images/bg-desktop.svg") no-repeat left center;
 }
-header img {
-    width: 13rem;
+header {
+    margin-bottom: 3rem;
 }
 main {
-    display: flex;
-    flex-flow: row wrap;
+    grid-template-rows: 100%;
+    grid-template-columns: 60% 40%;
+    gap:1rem;
+    max-height: 85%;
 }
 section {
-    padding: 2rem;
-    flex: auto;
+    place-content:start;
 }
 .image {
-    width: 55%;
+    object-fit: cover;
 }
 .content {
+    margin-top: 2rem;
     text-align: left;
-    width: 40%;
-
+    max-width: 30rem;
 }
 .content p {
+    padding: 0;
+}
+.content .btn {
     margin: 0;
 }
 nav {
     justify-content: flex-end;
 }
 nav a {
-    width: 3rem;
-    height: 3rem;
+    font-size: 1.2rem;
+}
+footer {
+    text-align: right;
+    margin-top: 0;
 }

@@ -5,7 +5,8 @@
 --magenta400: hsl(300, 69%, 71%);
 --white: #fff;
 /* FONTES */
---padrao:normal 400 1rem 'Open Sans, Arial, Sans-serif';
---ff:'Poppins', Arial ,Sans-serif;
---fw: 600;
+--ff1: 'Poppins', Arial, Sans-serif;
+--regular: 400;
+--semibold:600;
+--ff2: 'Open Sans', Arial, Sans-serif;
 }
