@@ -1,0 +1,104 @@
+@charset 'UTF-8';
+body {
+    background: var(--Light-Grayish-Blue);
+    font-family: var(--FF);
+    font-weight: var(--Fmedium);
+    display: grid;
+    place-items:center;
+    width: 100vw;
+    min-height: 100vh;
+}
+main {
+    border-radius: .5rem;
+    overflow: hidden;
+    max-width: 21.5rem;
+}
+.image {
+    width: 100%;
+    background: var(--white) url("../assets/images/drawers.jpg") no-repeat left center;
+    height: 14rem;
+    background-size: cover;
+}
+.content {
+    padding: 2rem;
+    background: var(--white);
+}
+.content h1 {
+    font-size: clamp(1rem,3vw,1.3rem);
+    font-weight: var(--Fsemibold);
+    color: var(--Very-Dark-Grayish-Blue);
+    margin-bottom: 1rem;
+}
+.content p {
+    color: var(--Desaturated-Dark-Blue);
+    margin-bottom: 2rem;
+    font-size: .9rem;
+}
+.perfil {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 1.8rem;
+    position: relative;
+}
+.perfil .dates{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 1rem;
+}
+.perfil .avatar {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+.perfil .names {
+    font-size: var(--FS);
+    display: flex;
+    flex-flow: column nowrap;
+    line-height: 1.3rem;
+}
+.names strong {
+    color: var(--Very-Dark-Grayish-Blue);
+}
+.names span {
+    color: var(--Desaturated-Dark-Blue);
+}
+.perfil .share{
+    background:var(--Light-Grayish-Blue);
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    overflow: hidden;
+}
+.share img {
+    z-index: 2;
+}
+.navbar {
+    position: absolute;
+    background: var(--Very-Dark-Grayish-Blue);
+    color: var(--Light-Grayish-Blue);
+    display: none;
+    flex-flow: row wrap;
+    align-items: center;
+    column-gap: 1rem;
+    font-size: 1.5rem;
+    z-index: 1;
+    width: 130%;
+    left: -11%;
+    padding-left: 2rem;
+    height: 5rem;
+}
+.navbar span {
+    font-size: .9rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-weight: var(--Fsemibold);
+    color: var(--Grayish-Blue);
+}
+.share a {
+    color: var(--Light-Grayish-Blue);
+}
