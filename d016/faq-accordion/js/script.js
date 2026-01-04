@@ -6,7 +6,7 @@ const icons = [
 ]
 img.forEach( (i,c) => {
     i.addEventListener("click", () => {
-        if (p[c].classList != "on") {
+        if (p[c].classList !== "on") {
             i.src = icons[1]
             i.alt = "icon-minus"
         }else {
