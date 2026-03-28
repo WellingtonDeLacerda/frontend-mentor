@@ -1,20 +1,19 @@
-const icon = document.querySelector(".icon-share")
-const img = document.querySelector(".icon-share")
-const nav = document.querySelector(".navbar")
-const icons = [
-    "assets/images/icon-share1.svg",
-    "assets/images/icon-share2.svg"
-]
-icon.addEventListener("click", () => {
-    if (nav.style.display === "none" || nav.style.display === "") {
-        nav.style.display = "flex"
-        img.src = icons[1]
-        icon.style.background = "var(--Desaturated-Dark-Blue)"
-        img.style.padding = ".5rem"
-    }else {
-        nav.style.display = "none"
-        img.src = icons[0]
-        icon.style.background = "var(--Light-Grayish-Blue)"
-        img.style.padding = "0"
-    }
+const share = document.querySelectorAll(".icon img")
+const box_share = document.querySelectorAll(".icon")
+const containerFluid = document.querySelector(".container-none")
+box_share[1].style.background = "var(--Desaturated-Dark-Blue)"
+share.forEach((e,ind) => {
+    e.addEventListener("click", () => {
+        if (containerFluid.className === "container-none") {
+            containerFluid.classList.add("container-fluid")
+            containerFluid.classList.remove("container-none")
+            share[0].src = "images/icon-share2.svg"
+            box_share[0].style.background = "var(--Desaturated-Dark-Blue)"
+        }else {
+            containerFluid.classList.remove("container-fluid")
+            containerFluid.classList.add("container-none")
+            share[0].src = "images/icon-share.svg"
+            box_share[0].style.background = "var(--Light-Grayish-Blue)"
+        }
+    })
 })

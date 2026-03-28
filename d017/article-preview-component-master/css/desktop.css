@@ -1,45 +1,35 @@
 main {
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 47rem;
-    background: var(--white);
-    overflow: visible;
-    border-radius: 1rem;
-}
-.image {
-     width: 40%;
-     height: 18rem;
-     border-radius: .6rem 0rem 0rem .6rem;
-}
-.content {
-   width: 60%;
-   border-radius: 0rem 1rem 1rem 0rem;
-}
-.perfil .share {
-    position:relative ;
-    overflow: visible;
-    
-}
-.share img {
-    border-radius: 50%;
+    display: grid;
+    grid-template-columns: 18rem 28rem;
+    position: relative;
     overflow: visible;
 }
-.navbar {
-    width: 15rem;
-    height: 3rem;
-    top: -5rem;
-    left: -6rem;
-    padding-left: 1rem;
-    border-radius: 10px;
+.image {height: auto;}
+.image img {border-radius: .8rem 0 0 .8rem;}
+.content {position: static;}
+.container {margin: 0;}
+.content p {margin-bottom: 1rem;}
+.container-fluid {
+    width: auto;
+    left: auto;
+    right: -10%;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    bottom: 30%;
+    justify-content: center;
+    gap: 1rem;
 }
-.navbar::after {
+.container-fluid::after {
     content: '';
     position: absolute;
-    left: 40%;
-    top: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3rem;
     width: 0;
     height: 0;
-    border-left: 1rem solid transparent;
-    border-right: 1rem solid transparent;
-    border-top: 1rem solid var(--Very-Dark-Grayish-Blue);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--Very-Dark-Grayish-Blue);
 }
+#icon {display: none;}
