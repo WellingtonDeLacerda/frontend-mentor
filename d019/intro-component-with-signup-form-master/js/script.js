@@ -4,7 +4,7 @@ const div = document.querySelectorAll(".div_input")
 const label = document.querySelectorAll(".error")
 // validar envio de dados
 inputs.forEach((e,i) => {
-    let img = document.createElement("img")
+    const img = document.createElement("img")
     img.src = "images/icon-error.svg"
     img.classList.add("icon-normal")
     img.setAttribute("alt","Icone de erro")
