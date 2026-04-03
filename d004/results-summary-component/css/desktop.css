@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    place-items:center;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+section {
+     width: 50%;
+}
+.result {
+    border-radius: 0rem 2rem 2rem 0rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.result .points {
+    width: 12rem;
+    height: 12rem;
+}
+.card, .result{
+    padding: 3.2rem;
+}

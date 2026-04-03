@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/var.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:40rem)">
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
@@ -20,10 +23,12 @@
         <p>You scored higher than 65% of the people who have taken these tests.</p>
      </section>
      <!-- AQUI FICARÁ OS CARDS -->
-     <section class="card" id="card">
+     <section class="card-group">
+     <form method="get" autocomplete="on">
      <!-- AQUI EU PUXO OS CARDS COM JSON E JS -->
+     </form>
      </section>
   </main>
-  <script src="scripts/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,127 @@
+@charset 'UTF-8';
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--pale-blue);
+    font: var(--font-semibold);
+}
+main {
+    background: var(--white);
+    min-width: 18rem;
+    max-width: 46rem;
+}
+.result {
+    background-image: linear-gradient(to bottom, var(--light-slate-blue),var(--light-royal-blue));
+    text-align: center;
+    padding: 2rem;
+    color: var(--white);
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+.result h1 {
+    font: var(--font-bold);
+    font-size: clamp(1.2rem,5vw,1.5rem);
+    color: var(--light-lavender);
+}
+.result h2 {
+    font-size: clamp(1.5rem,5vw,2rem);
+}
+.result p {
+    font: var(--font-medium);
+    margin-top: 1rem;
+    color: var(--light-lavender);
+}
+.result .points {
+    border-radius: 50%;
+    display: inline-flex;
+    width: 9rem;
+    height: 9rem;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+    background-image: linear-gradient(to bottom,var(--violet-blue), var(--persian-blue));
+}
+.points strong {
+    font: var(--font-bold);
+    font-size: 3.5rem;
+    font-size: clamp(3rem,9vw,4.7rem);
+}
+.points span {
+    font-size: clamp(.7rem,4vw,1.2rem);
+    color: var(--light-lavender);
+}
+.card-group {
+    padding: 2rem;
+}
+.card-group h2 {
+    margin-bottom: 2rem;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
+.card-figures {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+    border-radius: .7rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.figure {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    column-gap: 1rem;
+}
+.numbers strong {
+    font: var(--font-bold);
+    color: var(--dark-gray-blue);
+}
+.btn {
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 1rem;
+    background: var(--dark-gray-blue);
+    text-align: center;
+    color: var(--white);
+    border-radius: 1.5rem;
+    font: var(--font-semibold);
+    margin-top: 1.5rem;
+}
+.btn:hover {
+    background: var(--cobalt-blue);
+    cursor: pointer;
+} 
+.scores {
+   font: var(--font-bold);
+}
+.num {
+    opacity:30%;
+}
+.category0 {
+    color: var(--light-red);
+}
+.category1 {
+    color: var(--orangey-yellow);
+}
+.category2 {
+    color: var(--green-teal);
+}
+.category3 {
+    color: var(--cobalt-blue);
+}
+.card0 {
+    background: var(--fundo1);
+}
+.card1 {
+    background: var(--fundo2);
+}
+.card2 {
+    background: var(--fundo3);
+}
+.card3 {
+    background: var(--fundo4);
+}
+.error-json {
+    
+}
