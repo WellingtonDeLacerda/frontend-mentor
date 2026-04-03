@@ -57,6 +57,7 @@ formulario.addEventListener("submit", (evt) => {
 inputs.forEach((e,i) => {
     e.addEventListener("focus", () => {
         div[i].classList.add("div-focus")
+        div[i].classList.remove("input-normal")
     })
 
     e.addEventListener("blur", () => {
