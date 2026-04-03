@@ -1,18 +1,13 @@
-const img = document.querySelectorAll(".icon")
+const icon = document.querySelectorAll(".box img")
 const p = document.querySelectorAll("p")
-const icons = [
-    "assets/images/icon-plus.svg",
-    "assets/images/icon-minus.svg"
-]
-img.forEach( (i,c) => {
-    i.addEventListener("click", () => {
-        if (p[c].classList !== "on") {
-            i.src = icons[1]
-            i.alt = "icon-minus"
+
+icon.forEach((e,i) => {
+    e.addEventListener("click", () => {
+        p[i].classList.toggle("on")
+        if (e.src.includes("plus")) {
+            e.src = "images/icon-minus.svg"
         }else {
-            i.src = icons[0]
-            i.alt = "icon-plus"
+            e.src = "images/icon-plus.svg"
         }
-        p[c].classList.toggle("on")
     })
 })
