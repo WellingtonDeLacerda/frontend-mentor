@@ -5,21 +5,13 @@ body {
 }
 main {
     background: var(--line1);
-    width: 100vw;
+    min-width: 100vw;
     min-height: 100vh;
 }
-.logo {
-    padding: 2rem;
-}
-.logo img {
-    width: 7rem;
-}
-.image {
-    margin-bottom: 2rem;
-}
-.image img {
-    width: 100%;
-}
+.logo {padding: 2rem;}
+.logo img {width: 7rem;}
+.image {margin-bottom: 2rem;}
+.image img {width: 100%;}
 .content {
     text-align: center;
     padding: 1.5rem;
@@ -46,50 +38,47 @@ h1 strong {
     font-size: var(--FS);
     color: var(--pink400);
 }
-form {
+.campo_email {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    width: auto;
+    column-gap: 1rem;
     position: relative;
 }
-.content input[type="email"]#mail {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 2rem;
-    border: 1px solid var(--pink400);
+.campo_normal {border: 1px solid var(--pink400);}
+.campo_error {border: 2px solid var(--red500);}
+.campo_focus {border: 2px solid var(--pink400);}
+form input[type="email"] {
     background: transparent;
     outline: none;
+    border: none;
     color: var(--gray900);
+    width: 100%;
+    padding: 1rem 0 1rem 1.5rem;
 }
-.content input[type="email"]#mail::placeholder {
-    color: var(--pink400);
-    font-weight: var(--medium);
-}
-#icon-error {
-    position: absolute; 
-    right: 4.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.semError {
-    display: none;
-}
-.error {
-    display: block;
+form input[type="email"]::placeholder {font-weight: var(--medium);}
+.placeholder_normal::placeholder {color: var(--pink400);}
+.placeholder_error::placeholder {color: var(--red500);}
+.icon-error-off {display:none ;}
+.icon-error-on {
+    position: absolute;
+    right: 5rem;
 }
 .content .btn {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
     background: var(--line2);
-    width: 4rem;
-    height: 3rem;
-    border-radius: 40%;
-    overflow: hidden; 
+    padding: .8rem 2rem;
+    width: auto;
+    border-radius: 1.8rem;
     border: none;
 }
 .content .btn:hover {
     cursor: pointer;
-    overflow: visible;
-    box-shadow: 0px 8px 8px var(--shadow);
+    box-shadow: 0px 8px 10px var(--shadow);
+    margin-right: -.8rem;
+    background: var(--pink100);
 }
 .res {
     text-align: left;

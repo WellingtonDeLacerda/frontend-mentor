@@ -28,16 +28,20 @@
         <h1>We're <strong>coming soon</strong></h1>
 
         <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        <form>
-        <input type="email" name="email" id="mail" placeholder="Email Address">
-        <img src="assets/images/icon-error.svg" alt="icone de erro" class="semError" id="icon-error">
-        <button type="button" class="btn">
+        <form method="post" autocomplete="on" novalidate>
+        <div class="campo_email campo_normal">    
+         
+        <input type="email" name="email" id="mail" placeholder="Email Address" class="placeholder_normal">
+        <img src="assets/images/icon-error.svg" alt="icone de erro" class="icon-error-off icon">
+        
+        <button type="submit" class="btn">
            <img src="assets/images/icon-arrow.svg" alt="icone-arrow">
         </button>
-        </form>
+        </div>
         <div class="res">
             
         </div>
+        </form>
       </section>
       <!-- END SECTION CONTENT -->
    </main>
