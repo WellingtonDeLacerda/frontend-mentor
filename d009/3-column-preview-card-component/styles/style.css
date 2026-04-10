@@ -25,7 +25,8 @@ body {
     background: var(--gray100);
 }
 h1 {
-  color: transparent;
+  position: absolute;
+  left: -9999%;
 }
 main {
     border-radius: .5rem;
