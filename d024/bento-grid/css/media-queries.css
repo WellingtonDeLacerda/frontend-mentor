@@ -60,7 +60,6 @@ main {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: ;
     text-align: left;
 }
 .grid5 img {
