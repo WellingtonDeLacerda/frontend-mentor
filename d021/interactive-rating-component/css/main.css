@@ -59,9 +59,13 @@ form input[type='radio'] {display: none;}
     border-radius: 50%;
     font-family: Arial, Sans-serif;
 }
-.form-label:hover {
+.hover-on:hover {
     background: var(--Orange500);
     color: var(--Grey950);
+    cursor: pointer;
+}
+.hover-off:hover {
+    background: var(--White);
     cursor: pointer;
 }
 form .but {
