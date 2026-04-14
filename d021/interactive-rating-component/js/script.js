@@ -34,10 +34,14 @@ input.forEach((e,i) => {
         label.forEach(index => {
         index.classList.add("label-normal")
         index.classList.remove("label-active")
+        index.classList.remove("hover-off")
+        index.classList.add("hover-on")
         })
         if (e.checked) {
         label[i].classList.remove("label-normal")
         label[i].classList.add("label-active")
+        label[i].classList.add("hover-off")
+        label[i].classList.remove("hover-on")
         }        
     })
 })
