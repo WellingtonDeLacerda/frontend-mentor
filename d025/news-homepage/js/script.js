@@ -2,7 +2,6 @@ const menu = document.querySelector(".menu")
 const nav = document.querySelector(".navbar")
 const iconMenu = document.querySelector(".icon_menu")
 const html = document.querySelector("html")
-const main = document.querySelector("main")
 const back = document.querySelector(".back")
 
 menu.addEventListener("click", () => {
@@ -22,5 +21,16 @@ menu.addEventListener("click", () => {
         html.classList.add("desligado")
         back.classList.remove("fundo-on")
         back.classList.add("fundo-off")
+    }
+})
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+        back.classList.add("fundo-off")
+        back.classList.remove("fundo-on")
+    }else {
+        if (window.innerWidth < 768 && nav.classList.contains("nav-on")) {
+            back.classList.add("fundo-on")
+            back.classList.remove("fundo-off")
+        }
     }
 })
