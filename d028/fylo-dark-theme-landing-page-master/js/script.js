@@ -7,7 +7,7 @@ form.addEventListener("submit", (event) => {
     let isValid = true
     
     const formData = new FormData(form)
-    for ([key, value] of formData) {
+    for (let [key, value] of formData) {
         if (value.trim() === "") {
             isValid = false
             console.log("caixa vazia")
