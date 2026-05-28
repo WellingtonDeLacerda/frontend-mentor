@@ -113,7 +113,7 @@ button.btn {
     border-color: var(--White);
 }
 .productive-txt svg {
-    color: "#62E0D9";
+    color: #62E0D9;
 }
 .productive-txt a:hover svg {
     color: var(--White);
