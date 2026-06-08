@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/root.css">
+  <link rel="stylesheet" href="assets/css/mobile-first.css">
+  <link rel="stylesheet" href="assets/css/media-queries.css" media="screen and (min-width:40rem)">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  <main>
+    <form method="post" novalidate>
+       <h1>Contact Us</h1>
+       <div class="box-names">
+           
+          <div class="first-name erro-box">
+             <label for="iname">First Name *</label>
+             <div class="input-box erro-deactived first-boxes">
+                <input type="text" name="first-name" id="iname">
+             </div>
+             <span class="erro-off first-txts">This field is required</span>
+          </div>
+          
+          <div class="last-name erro-box">
+             <label for="ilast-name">Last Name *</label>
+             <div class="input-box erro-deactived first-boxes">
+                <input type="text" name="last-name" id="ilast-name">
+             </div>
+             <span class="erro-off first-txts">This field is required</span>
+          </div>
+          
+       </div>
+       
+       <div class="email erro-box">
+          <label for="iemail">Email Address *</label>
+          <div class="input-box erro-deactived first-boxes">
+             <input type="email" name="email" id="iemail">
+          </div>
+          <span class="erro-off first-txts">This field is required </span>
+          <!-- Please enter a valid email address -->
+       </div>
+       
+       <div class="query erro-box">
+         <span class="type">Query Type *</span>
+         
+         <div class="box-radios">
+             
+           <div class="input-box">
+              <input type="radio" name="query-radio" id="radio-general" value="General Enquiry">
+              <label class="input-radio radio-off" for="radio-general"><!-- radio --></label>
+              <label for="radio-general" class="radio-name">General Enquiry</label>
+           </div>
+           
+           <div class="input-box">
+              <input type="radio" name="query-radio" id="radio-request" value="Support Request">               
+              <label class="input-radio radio-off" for="radio-request"> <!-- radio --> </label>
+              <label for="radio-request" class="radio-name">Support Request</label>              
+           </div>
+           
+         </div>
+         <span class="erro-off">Please select a query type</span>
+         
+       </div>
+       
+       <div class="box-message erro-box">
+          <label for="imessage">Message *</label>
+          <textarea class="message input-box erro-deactived" name="message" id="imessage"></textarea>
+          
+          <span class="erro-off">This field is required</span>
+       </div>
+       
+       <div class="custom-checkbox erro-box">
+         <div class="checkbox">
+            <input type="checkbox" name="check-confirm" id="icheck-confirm">
+            <label class="checkbox-off input-checkbox" for="icheck-confirm"><!-- checkbox --></label>
+            <label for="icheck-confirm">I consent to being contacted by the team *</label>
+         </div>
+         <span class="erro-off" for="icheck-confirm">To submit this form, please consent to being contacted</span>
+       </div>
+       
+       <button type="submit" class="btn-submit">Submit</button>
+       
+       <div class="avise-success avise-off">
+          <div class="box-avise">
+             <img src="assets/images/icon-success-check.svg" alt="icon-success-check">
+             <p>Message Sent!</p>
+          </div>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+       </div>
+    </form>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

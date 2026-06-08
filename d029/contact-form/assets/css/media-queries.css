@@ -1,0 +1,21 @@
+form {
+    min-width: clamp(40rem,48vw,50rem);
+    padding: 2.5rem;
+}
+.box-names {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:.8rem;
+}
+.query .box-radios {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:.8rem;
+}
+.box-message .message {
+    height: 5rem;
+    max-width: 100%;
+}
+.custom-checkbox {
+    margin: 2rem 0;
+}
