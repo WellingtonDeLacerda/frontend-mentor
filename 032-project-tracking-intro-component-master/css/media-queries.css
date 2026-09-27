@@ -43,7 +43,7 @@ nav a:hover::after{
   cursor: pointer;
   width: 100%;
 }
-span.line {
+li.line {
   height: 5px;
   width: 5px;
   border-radius: 50%;

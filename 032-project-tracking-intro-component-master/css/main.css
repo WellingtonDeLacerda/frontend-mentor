@@ -51,7 +51,7 @@ nav a {
   color: var(--blue-950);
   font-weight: var(--fw-bold);
 }
-span.line {
+li.line {
   height: 2px;
   width: 100%;
   background-color: var(--blue-950);
